@@ -56,6 +56,12 @@ export const GithubState = ({ children }) => {
             .then(data => setFollowers(data));
     };
 
+    useEffect(()=>{
+        getData();
+        setSearch('');
+    },[]);
+
+
     return (
         <GithubContext.Provider value={{ getSearch, user, repos, followers, overview, search, setSearch, error, }}>
             {children}
