@@ -21,7 +21,7 @@ const Hero = () => {
                 {user ? (
                     <>
                     <User />
-                    <div className="warapper">
+                    <div className="wrapper">
                         <ReposNav />
                         <ReposContainer  />
                     </div>
